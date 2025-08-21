@@ -1,0 +1,23 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1024" height="1024" rx="240" fill="#0D1117"/>
+  <defs>
+    <linearGradient id="g1" x1="128" y1="128" x2="896" y2="896" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8"/>
+      <stop offset="0.5" stop-color="#6366F1"/>
+      <stop offset="1" stop-color="#EC4899"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="256" y1="256" x2="768" y2="768" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FDE68A" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#F59E0B" stop-opacity="0.9"/>
+    </linearGradient>
+    <filter id="glow" x="0" y="0" width="1024" height="1024" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="32" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <path d="M180 700 C260 760 360 800 470 800 C720 800 840 640 840 512 C840 384 720 224 470 224 C360 224 260 264 180 324" stroke="url(#g1)" stroke-width="40" stroke-linecap="round" stroke-linejoin="round" fill="none" filter="url(#glow)"/>
+  <path d="M260 620 C320 660 400 700 470 700 C640 700 720 600 720 512 C720 424 640 320 470 320 C400 320 320 356 260 404" stroke="url(#g2)" stroke-width="32" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <circle cx="470" cy="512" r="90" fill="#0D1117" stroke="url(#g1)" stroke-width="20"/>
+  <path d="M430 560 L430 464 L470 488 L510 464 L510 560 L470 536 Z" fill="url(#g2)"/>
+  <text x="512" y="910" text-anchor="middle" font-family="'SF Pro Rounded', 'Avenir Next', 'Helvetica Neue', Arial" font-size="120" font-weight="600" fill="url(#g1)">StreamIQ</text>
+</svg>
