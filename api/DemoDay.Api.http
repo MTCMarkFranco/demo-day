@@ -1,0 +1,68 @@
+### Demo Day AI Agent API Test File
+
+@api_base = https://localhost:7139
+
+### Health Check
+GET {{api_base}}/health
+
+### Get Application Info
+GET {{api_base}}/info
+
+### Get Agent Capabilities
+GET {{api_base}}/api/agent/capabilities
+
+### Test AI Agent - Simple Question
+POST {{api_base}}/api/agent/stream
+Content-Type: application/json
+
+{
+    "message": "Hello! Can you tell me about the benefits of streaming responses?",
+    "context": "This is a test of the streaming AI agent",
+    "includeWeather": false
+}
+
+### Test AI Agent - Weather Question
+POST {{api_base}}/api/agent/stream
+Content-Type: application/json
+
+{
+    "message": "What's the weather like in Seattle today?",
+    "includeWeather": true,
+    "location": "Seattle"
+}
+
+### Test AI Agent - Weather Question with Auto-Detection
+POST {{api_base}}/api/agent/stream
+Content-Type: application/json
+
+{
+    "message": "I'm planning a trip to New York. What's the current weather like there?",
+    "includeWeather": true
+}
+
+### Test AI Agent - General Question with Weather Context
+POST {{api_base}}/api/agent/stream
+Content-Type: application/json
+
+{
+    "message": "Should I wear a jacket today in London?",
+    "includeWeather": true
+}
+
+### Test AI Agent - Non-Weather Question
+POST {{api_base}}/api/agent/stream
+Content-Type: application/json
+
+{
+    "message": "Explain the concept of microservices architecture and its benefits.",
+    "context": "Technical explanation needed",
+    "includeWeather": false
+}
+
+### Test Agent Health
+GET {{api_base}}/api/agent/healthay.Api_HostAddress = http://localhost:5176
+
+GET {{DemoDay.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
