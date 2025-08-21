@@ -12,13 +12,12 @@
     <PackageReference Include="Microsoft.Extensions.Http" Version="9.0.8" />
     <PackageReference Include="Microsoft.SemanticKernel" Version="1.63.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
-    
-    <!-- Test packages -->
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="8.0.19" />
-    <PackageReference Include="xunit" Version="2.9.0" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2" />
-    <PackageReference Include="Moq" Version="4.20.72" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+      <_Parameter1>DemoDay.Api.Tests</_Parameter1>
+    </AssemblyAttribute>
   </ItemGroup>
 
 </Project>
