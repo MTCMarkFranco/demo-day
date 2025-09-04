@@ -9,6 +9,7 @@ Real-time streaming Markdown viewer using SwiftUI + MarkdownUI.
 - Uses `URLSession.bytes` + `AsyncThrowingStream` for character/token streaming.
 - Swift concurrency throughout (`Task`, `AsyncStream`, `MainActor`).
 - Adaptive layout for all iPhone sizes.
+- New changes
 
 ## Requirements
 - Xcode 15+
